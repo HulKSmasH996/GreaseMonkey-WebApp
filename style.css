@@ -1,0 +1,103 @@
+body {
+    background: #21252b;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    maring: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    outline: none;
+}
+
+input, button {
+    border: 0;
+    padding: 10px;
+}
+
+.body{
+
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 20px #333;
+
+}
+
+.header{
+
+  background: #fff;
+  padding: 20px;
+  width: auto;
+  margin: 0px auto;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #333;
+
+}
+.logo{
+   height: 150px;
+   width: 150px;
+}
+.form{
+  width: auto;
+}
+.mainDiv {
+    background: #fff;
+    padding: 20px;
+    width: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 20px #333;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+textarea {
+    border: 0px;
+    background: #fff;
+    padding: 5px 0px;
+    outline: none;
+    width: 100%;
+    resize: none;
+    white-space: nowrap;
+}
+
+button {
+    background: #528bff;
+    color: #fff;
+    position: relative;
+    top: 50px;
+    border-radius: 5px 20px;
+    width: 64px;
+    height: 64px;
+  }
+.check{
+   height: 300px;
+   width: 433px;
+
+}
+.register{
+  height: 170px;
+  width:400px;
+}
+
+.whole{
+  padding: 30px;
+}
+.input-field col s12{
+  width: 400px;
+}
