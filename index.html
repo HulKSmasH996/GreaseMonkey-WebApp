@@ -24,14 +24,14 @@
 		<div class="form" align="center">
 			<form action="#">
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="fname">
-					<label class="mdl-textfield__label" for="sample3">First Name</label>
+					<input class="mdl-textfield__input" type="text" id="pname">
+					<label class="mdl-textfield__label" for="sample3">Service Provider</label>
 				</div>
 			</form>
 			<form action="#">
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<input class="mdl-textfield__input" type="text" id="lname">
-					<label class="mdl-textfield__label" for="sample2">Last Name</label>
+					<input class="mdl-textfield__input" type="text" id="name">
+					<label class="mdl-textfield__label" for="sample2">Name of Provider/Owner</label>
 				</div>
 			</form>
 			<a>Service Provided</a>
@@ -44,13 +44,15 @@
 			<div  align="center"class="input-field col s12">
     			<select id = "servicesList" name="servicesList" onchange="handleSelect()">
 				      <option value="" disabled selected>Choose your option</option>
-				      <option value="1">Option 1</option>
-				      <option value="2">Option 2</option>
-				      <option value="3">Option 3</option>
-				    </select>
-  		</div>
+				      <option value="1">Laundery Services</option>
+				      <option value="2">Automobile</option>
+				      <option value="3">Plumbing</option>
+					  <option value="3">Home Decor</option>
+					  <option value="3">Carpenter</option>
 
 
+				</select>
+  		     </div>
 
 			<!-- Floating Multiline Textfield -->
 			<form action="#">
@@ -58,6 +60,25 @@
 			    <textarea class="mdl-textfield__input" type="text" rows= "3" id="address" ></textarea>
 			    <label class="mdl-textfield__label" for="address">Address ...</label>
 			  </div>
+			</form>
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="city">
+					<label class="mdl-textfield__label" for="sample2">City</label>
+				</div>
+			</form>
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="state">
+					<label class="mdl-textfield__label" for="sample2">State</label>
+				</div>
+			</form>
+			<form action="#">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="pin">
+					<label class="mdl-textfield__label" for="phone">Pin Code</label>
+					<span class="mdl-textfield__error">Input is not a number!</span>
+				</div>
 			</form>
 			<!-- Numeric Textfield with Floating Label -->
 			<form action="#">

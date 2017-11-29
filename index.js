@@ -11,15 +11,18 @@
 var userRef= firebase.database().ref('users');
 var submit = document.getElementById("submitButton");
 function submitClick() {
-  var firstname = getInputVal('fname');
-  var lastname = getInputVal('lname');
+  var providername = getInputVal('pname');
+  var name = getInputVal('name');
   var address = getInputVal('address');
   var phone = getInputVal('phone');
+  var city = getInputVal('city');
+  var state = getInputVal('state');
+  var pin = getInputVal('pin');
   var service = String(handleSelect());
   //alert(service);
-  if(firstname!=="" && lastname!=="" && address!=="" && phone!=="" && service !==""){
-    console.log(firstname);
-    saveMessage(firstname,lastname,address,phone,service);
+  if(providername!=="" && name!=="" && address!=="" && phone!=="" && service !=="" && city!=="" && state!=="" && pin!==""){
+    console.log(providername);
+    saveMessage(providername,name,address,phone,service,city,state,pin);
     //window.open ("success.html","mywindow");
     window.open("success.html","_self")
   }
@@ -33,14 +36,17 @@ function submitClick() {
 function getInputVal(id) {
   return document.getElementById(id).value;
 }
-function saveMessage(fname,lname,address,phone,service) {
+function saveMessage(pname,name,address,phone,service,city,state,pin) {
   var newUserRef = userRef.push();
   newUserRef.set({
-    fname:fname,
-    lname:lname,
+    pname:pname,
+    name:name,
     address:address,
     phone:phone,
-   service:service
+   service:service,
+      city:city,
+      state:state,
+    pin:pin
   });
 }
 function handleSelect() {
